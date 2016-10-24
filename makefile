@@ -55,7 +55,7 @@ build/containerpilot_build:
 
 # shortcut target for other targets: asserts a
 # working test environment
-docker: build/containerpilot_build consul etcd
+docker: build/containerpilot_build consul etcd noop
 
 # top-level target for vendoring our packages: glide install requires
 # being in the package directory so we have to run this for each package
